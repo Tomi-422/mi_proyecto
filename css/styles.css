@@ -110,15 +110,12 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.empresa__img {
-    margin-left: 90px;
-}
 
 .empresa__text {
     margin-right: 90px;
     margin-left: 50px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
     color: #6E675F;
 }
 
@@ -142,7 +139,8 @@ nav ul li a:hover {
 .servicios__text {
     margin: 50px 100px 30px 100px;
     color: #6E675F;
-    text-align: center;
+    line-height: 1.5rem;
+    font-size: 20px;
 }
 
 .servicios__logo img {
@@ -157,7 +155,8 @@ nav ul li a:hover {
 .maquinas {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -171,7 +170,6 @@ nav ul li a:hover {
 .maquinas__text {
     margin: 50px 100px 80px 100px;
     color: #6E675F;
-    text-align: center;
 }
 
 .maquinas__img img {
@@ -442,6 +440,10 @@ input {
 }
 
 /* fin estilo footer */
+
+
+
+
 /* Medias query */
 
 /*Tablet*/
@@ -468,6 +470,9 @@ input {
 
     .navbar-brand{
         font-size: 40px;
+    }
+    .navbar-text{
+        display: none;
     }
     nav ul {
         display: flex;
@@ -531,13 +536,6 @@ input {
         width: auto;
     }
 
-    
-
-
-
-
-
-
     /* Fin estilo product */
     .call {
         margin-top: 50px;
@@ -569,7 +567,7 @@ input {
     .empresa {
         display: flex;
         flex-direction: column;
-
+        
     }
 
     .empresa__img {
@@ -580,11 +578,8 @@ input {
     }
 
     .empresa__text {
-        margin-top: -25px;
-        margin-left: 85px;
-        width: 500px;
-        height: auto;
-        overflow-y: hidden;
+        margin-top: 30px;
+        
     }
 
     /* Fin estilos Empresa*/
@@ -598,6 +593,13 @@ input {
 
     .servicios__logo img {
         margin: 30px;
+    }
+
+    .servicios__text2{
+        color: #6E675F;
+        line-height: 1.5rem;
+        font-size: 20px;
+        text-align: center;
     }
 
     /* Fin estilos Servicios*/
