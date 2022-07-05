@@ -19,9 +19,9 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: #FFEFBA; 
-    background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  
-    background: linear-gradient(to top, #FFFFFF, #FFEFBA); 
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to top, #FFFFFF, #FFEFBA);
     min-height: 120vh;
     margin: 0;
 }
@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .inicio__img {
-    
+
     margin-top: 15px;
     padding: 50px;
     max-width: 400px;
@@ -195,7 +195,7 @@ nav ul li a:hover {
 .gallery {
     width: 500px;
     display: grid;
-    grid-gap: 25px; 
+    grid-gap: 25px;
     justify-content: center;
     align-items: center;
     margin-left: 520px;
@@ -211,7 +211,7 @@ img {
 /* Inicio estilo product */
 .product {
     margin-bottom: 35px;
-    
+
 }
 
 .product__title {
@@ -226,8 +226,8 @@ img {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(255, 254, 253, 0.500), rgba(255, 254, 253, 0.500)), url("/assets/img/bg-main.jpg") fixed; 
-    background-position: cover; 
+    background: linear-gradient(rgba(255, 254, 253, 0.500), rgba(255, 254, 253, 0.500)), url("/assets/img/bg-main.jpg") fixed;
+    background-position: cover;
 }
 
 .product__items div {
@@ -255,7 +255,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: 75px;
-    
+
 }
 
 .call__title {
@@ -299,6 +299,7 @@ img {
     color: #423E37;
     border: none;
 }
+
 /* Fin estilo call */
 /* Inicio estilo Form */
 form {
@@ -447,7 +448,7 @@ input {
 /* Medias query */
 
 /*Tablet*/
-@media (max-width: 576px) {
+@media screen and (max-width: 751px) {
 
     /* Inicio estilos index*/
 
@@ -468,12 +469,14 @@ input {
         height: 150px;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         font-size: 40px;
     }
-    .navbar-text{
+
+    .navbar-text {
         display: none;
     }
+
     nav ul {
         display: flex;
         justify-content: center;
@@ -497,7 +500,7 @@ input {
         margin: 0px;
     }
 
-   
+
 
     .inicio__text {
         margin-top: 10px;
@@ -567,7 +570,7 @@ input {
     .empresa {
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .empresa__img {
@@ -579,7 +582,7 @@ input {
 
     .empresa__text {
         margin-top: 30px;
-        
+
     }
 
     /* Fin estilos Empresa*/
@@ -595,7 +598,7 @@ input {
         margin: 30px;
     }
 
-    .servicios__text2{
+    .servicios__text2 {
         color: #6E675F;
         line-height: 1.5rem;
         font-size: 20px;
@@ -618,4 +621,29 @@ input {
     /* Inicio estilos Contacto*/
     /* Fin estilos Contacto*/
 
+}
+/* Movile L  */
+@media screen and (max-width: 425px) {
+    /* inicio  */
+
+    .inicio__text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .inicio__text h2 {
+        font-size: 18px;
+        max-width: 350px;
+    }
+
+    .empresa__text p {
+        display: flex;
+        justify-content: center;
+        text-align:left;
+    }
+
+    .servicios__text2 {
+        font-size: 15px;
+    }
 }
