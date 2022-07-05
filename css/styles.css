@@ -646,4 +646,12 @@ input {
     .servicios__text2 {
         font-size: 15px;
     }
+
+    .maquinas__img {
+        max-width: 30px;
+    }
+
+    .maquinas__img img {
+        
+    }
 }
