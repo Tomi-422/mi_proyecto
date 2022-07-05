@@ -71,23 +71,25 @@ nav ul li a:hover {
 /* Main seccion Inicio */
 .inicio {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .inicio__img {
-    margin-right: 60px;
+    
+    margin-top: 15px;
     padding: 50px;
+    max-width: 400px;
 }
 
 .inicio__text {
-    width: 800px;
-    height: 400px;
-    margin-top: 30px;
-    margin-left: 35px;
-    padding: 50px;
+    line-height: 2rem;
+    width: 450px;
+    max-width: 1200px;
+    margin-top: 100px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #6E675F;
 }
+
 
 /* Main seccion Empresa */
 
@@ -193,34 +195,13 @@ nav ul li a:hover {
 }
 
 .gallery {
+    width: 500px;
     display: grid;
-    grid-gap: 5px;
-    grid-template-areas:
-        'A'
-        'B'
-        'C'
-        'D'
-        'E';
-}
+    grid-gap: 25px; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 520px;
 
-img:nth-child(1) {
-    grid-area: A;
-}
-
-img:nth-child(2) {
-    grid-area: B;
-}
-
-img:nth-child(3) {
-    grid-area: C;
-}
-
-img:nth-child(4) {
-    grid-area: D;
-}
-
-img:nth-child(5) {
-    grid-area: E;
 }
 
 img {
@@ -228,18 +209,11 @@ img {
     height: auto;
 }
 
-@media (min-width: 576px) {
-    .gallery {
-        grid-template-columns: 1.52fr 1fr 1fr 1.525fr;
-        grid-template-areas:
-            'A  B  C  E'
-            'A  D  D  E';
-    }
-}
 /* Fin estilo Gallery */
 /* Inicio estilo product */
 .product {
     margin-bottom: 35px;
+    
 }
 
 .product__title {
@@ -253,6 +227,9 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(255, 254, 253, 0.500), rgba(255, 254, 253, 0.500)), url("/assets/img/bg-main.jpg") fixed; 
+    background-position: cover; 
 }
 
 .product__items div {
@@ -261,6 +238,15 @@ img {
 
 .product__items div a {
     text-align: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+
+.product__img {
+    width: 100px;
+    height: 100px;
 }
 
 /* Fin estilo product */
@@ -271,6 +257,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: 75px;
+    
 }
 
 .call__title {
@@ -280,12 +267,15 @@ img {
 }
 
 .call__text {
+    line-height: 2rem;
+    font-size: 30px;
     text-align: center;
     margin: auto;
-    max-width: fit-content;
+    max-width: 600px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #6E675F
 }
+
 
 .call__button {
     display: flex;
@@ -294,9 +284,9 @@ img {
     justify-content: center;
 }
 
-button {
-    width: 200px;
-    height: 50px;
+.button__main {
+    width: 300px;
+    height: 60px;
     background-color: #F4442E;
     color: #EDEBD7;
     font-size: 20px;
@@ -306,7 +296,7 @@ button {
     border-left: 15px;
 }
 
-button:hover {
+.button__main:hover {
     background-color: #E3B23C;
     color: #423E37;
     border: none;
@@ -462,7 +452,6 @@ input {
     /* Inicio estilos header*/
     h1 {
         margin-left: 10px;
-
     }
 
     .encabezado {
@@ -475,9 +464,11 @@ input {
     .encabezado__img {
         width: 150px;
         height: 150px;
-
     }
 
+    .navbar-brand{
+        font-size: 40px;
+    }
     nav ul {
         display: flex;
         justify-content: center;
@@ -486,7 +477,7 @@ input {
 
     nav ul li {
         display: inline;
-        margin: 5px;
+        margin: 1px;
         font-size: 1em;
         text-align: center;
     }
@@ -501,16 +492,15 @@ input {
         margin: 0px;
     }
 
-    .inicio__img {
-        display: none;
-    }
+   
 
     .inicio__text {
         margin-top: 10px;
         width: 500px;
         height: auto;
         margin-left: 10px;
-        overflow-y: hidden;
+        text-align: center;
+        margin-bottom: 50px;
     }
 
     /* Inicio estilo product Inicio */
@@ -535,6 +525,18 @@ input {
     .product__items div a {
         text-align: center;
     }
+
+    .gallery {
+        margin: 0;
+        width: auto;
+    }
+
+    
+
+
+
+
+
 
     /* Fin estilo product */
     .call {
