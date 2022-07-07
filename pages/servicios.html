@@ -14,76 +14,81 @@
 
 <body>
   <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Su Vend</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./empresa.html">Empresa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./maquinas.html">Maquinas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            Café de verdad
-          </span>
-        </div>
-      </div>
-    </nav>
-    <!-- Fin Navbar-->
-  </header>
-  <!-- Main -->
-  <main>
-    <section class="servicios">
-      <div class="servicios__title">
-        <h1 data-aos="zoom-in">Nuestros Servicios</h1>
-      </div>
-      <div class="servicios__text">
-        <ul>
-          <li>
-            <p data-aos="fade-right">Máquinas italianas expendedoras de café en grano molido al instante</p>
+  <header class="container">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand encabezado__nav" href="../index.html">Su Vend</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link encabezado__nav encabezado__nav-1" aria-current="page" href="../index.html">Inicio</a>
           </li>
-          <li>
-            <p data-aos="fade-left">Variedades de café, chocolate y té</p>
+          <li class="nav-item">
+            <a class="nav-link encabezado__nav encabezado__nav-1" href="./empresa.html">Empresa</a>
           </li>
-          <li>
-            <p data-aos="fade-right">Expendedoras de snacks de calidad y yogures saludables</p>
+          <li class="nav-item">
+            <a class="nav-link encabezado__nav encabezado__nav-1" href="./servicios.html">Servicios</a>
           </li>
-          <li>
-            <p data-aos="fade-left">Sandwiches, latas y opciones varias de bebidas frias</p>
+          <li class="nav-item">
+            <a class="nav-link encabezado__nav encabezado__nav-1" href="./maquinas.html">Maquinas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link encabezado__nav encabezado__nav-1" href="./contacto.html">Contacto</a>
           </li>
         </ul>
+        <span class="navbar-text encabezado__nav">
+          Café de verdad
+        </span>
       </div>
-      <div class="servicios__logo">
-        <img src="../assets/img/logo1.png" alt="">
-        <img src="../assets/img/logo2.png" alt="">
-        <img src="../assets/img/logo3.png" alt="">
-      </div>
-      <div class="servicios__text2">
-        <p>TRABAJAMOS CON LAS MEJORES MARCAS DEL MERCADO!</p>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main class="container">
+    <div class="servicios__title row">
+      <h1 data-aos="zoom-in" class="col">Nuestros Servicios</h1>
+    </div>
+    <section class="container card__1">
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/card-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Máquinas italianas</h5>
+              <p class="card-text">Expendedoras de café en grano molido al instante</p>
+              <a href="#" class="btn btn-card">Más informacíon</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/card-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Expendedoras de snacks</h5>
+              <p class="card-text">Productos de calidad y yogures saludables</p>
+              <a href="#" class="btn btn-card">Más informacíon</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/card-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Expendedoras de bebidas</h5>
+              <p class="card-text">Sandwiches, latas y opciones varias de bebidas frias</p>
+              <a href="#" class="btn btn-card">Más informacíon</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <!-- Footer -->
   <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-muted">© 2022 Su Vend Todos los derechos reservados</p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text__footer1">
+      <p class="col-md-4 mb-0">© 2022 Su Vend Todos los derechos reservados</p>
 
       <a href="/"
         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -92,12 +97,12 @@
         </svg>
       </a>
 
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-        <li class="nav-item"><a href="./empresa.html" class="nav-link px-2 text-muted">Empresa</a></li>
-        <li class="nav-item"><a href="./servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
-        <li class="nav-item"><a href="./maquinas.html" class="nav-link px-2 text-muted">Maquinas</a></li>
-        <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+      <ul class="nav col-md-4 justify-content-end text__footer">
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2">Inicio</a></li>
+        <li class="nav-item"><a href="./empresa.html" class="nav-link px-2">Empresa</a></li>
+        <li class="nav-item"><a href="./servicios.html" class="nav-link px-2">Servicios</a></li>
+        <li class="nav-item"><a href="./maquinas.html" class="nav-link px-2">Maquinas</a></li>
+        <li class="nav-item"><a href="./contacto.html" class="nav-link px-2">Contacto</a></li>
       </ul>
     </footer>
   </div>

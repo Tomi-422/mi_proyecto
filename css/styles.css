@@ -14,224 +14,94 @@ main section h1 {
 }
 
 body {
-    overflow-x: hidden;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     background: #FFEFBA;
     background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);
     background: linear-gradient(to top, #FFFFFF, #FFEFBA);
     min-height: 120vh;
     margin: 0;
+
 }
 
-/* fin estilos generales*/
-/* Inicio estilos header */
-.encabezado {
-    display: flex;
-    flex-direction: column;
-}
-
-.encabezado__img {
-    margin-inline: auto;
-    width: 220px;
-    height: 220px;
+.row {
     justify-content: center;
 }
 
+/* Fin estilos generales*/
+/* Inicio estilos header */
 .encabezado__nav {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 15px;
     font-size: 1.5em;
-}
-
-nav ul li a {
     text-decoration: none;
     color: #423E37;
 }
 
-nav ul li a:hover {
+.encabezado__nav-1:hover {
     color: #F4442E;
 }
 
 /* Fin estilo header */
-/* Inicio estilo main */
-
 /* Main seccion Inicio */
+/* Estilo Inicio */
 .inicio {
-    display: flex;
-    justify-content: center;
+    margin-top: 50px;
+    /* display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center; */
 }
 
-.inicio__img {
-
-    margin-top: 15px;
-    padding: 50px;
-    max-width: 400px;
+.inicio__img img {
+    width: 350px;
+    height: 400px;
 }
 
 .inicio__text {
     line-height: 2rem;
-    width: 450px;
-    max-width: 1200px;
-    margin-top: 100px;
+    max-width: 450px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #6E675F;
 }
 
-
-/* Main seccion Empresa */
-
-.empresa {
-    display: flex;
-    margin-bottom: 90px;
-    align-items: center;
+.inicio__text h2 {
+    font-size: 30px;
 }
 
-.empresa__title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 90px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #E3B23C;
-    text-decoration: underline;
+.inicio__text h2:hover {
+    color: #F4442E;
+    max-width: 500px;
+    font-size: 32px;
 }
 
-
-.empresa__text {
-    margin-right: 90px;
-    margin-left: 50px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #6E675F;
-}
-
-/* Main seccion Servicios */
-
-.servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 90px;
-}
-
-.servicios__title {
-    margin-top: 50px;
-    margin-bottom: 40px;
-    color: #E3B23C;
-    text-decoration: underline;
-}
-
-.servicios__text {
-    margin: 50px 100px 30px 100px;
-    color: #6E675F;
-    line-height: 1.5rem;
-    font-size: 20px;
-}
-
-.servicios__logo img {
-    flex-direction: row;
-    margin: 90px;
-    width: 80px;
-    height: 80px;
-}
-
-/* Main seccion Maquinas */
-
-.maquinas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.maquinas__title {
-    color: #E3B23C;
-    text-decoration: underline;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.maquinas__text {
-    margin: 50px 100px 80px 100px;
-    color: #6E675F;
-}
-
-.maquinas__img img {
-    width: 1300px;
-    height: 400px;
-    margin-bottom: 80px;
-}
-
-
-
-/* Fin estilo main */
-/* Inicio estilo Gallery */
-.gallery__title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 90px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-}
-
-.gallery {
-    width: 500px;
-    display: grid;
-    grid-gap: 25px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 520px;
-
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-/* Fin estilo Gallery */
-/* Inicio estilo product */
+/* Fin estilo inicio */
+/* Estilo product */
 .product {
+    margin-top: 100px;
     margin-bottom: 35px;
-
 }
 
 .product__title {
     text-align: center;
     margin-bottom: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    color: #F4442E;
 }
 
 .product__items {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(255, 254, 253, 0.500), rgba(255, 254, 253, 0.500)), url("/assets/img/bg-main.jpg") fixed;
-    background-position: cover;
+    background: linear-gradient(rgba(255, 254, 253, 0.600), rgba(255, 254, 253, 0.600)), url("/assets/img/gallery-1.jpg") fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .product__items div {
-    margin: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .product__items div a {
@@ -241,21 +111,35 @@ img {
     text-decoration: none;
 }
 
-
-.product__img {
-    width: 100px;
-    height: 100px;
+/* Fin estilo product */
+/* Estilo gallery */
+.gallery {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Fin estilo product */
+.gallery__title {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #F4442E;
+    margin-bottom: 50px;
+}
 
+.carrousel {
+    height: 25%;
+    width: 500px;
+    margin-bottom: 80px;
+}
 
-/* Inicio estilo call */
+/* Fin estilo gallery */
+/* Estilo call */
 .call {
     display: flex;
     flex-direction: column;
     margin-top: 75px;
-
+    margin-bottom: 80px;
 }
 
 .call__title {
@@ -273,7 +157,6 @@ img {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #6E675F
 }
-
 
 .call__button {
     display: flex;
@@ -301,357 +184,124 @@ img {
 }
 
 /* Fin estilo call */
-/* Inicio estilo Form */
-form {
-    padding: 37.5px;
-    margin: 50px 0;
-    margin-left: -20px;
-}
-
-.contenedor__form {
-    border: solid 3px #474544;
-    max-width: 768px;
-    margin: 60px auto;
-    position: relative;
-}
-
-.campo__nombre {
-    float: left;
-    width: 45%;
-    margin-left: 4%;
-}
-
-.campo__email {
-    float: right;
-    width: 45%;
-}
-
-.campo__tel {
-    float: left;
-    width: 45%;
-    margin-left: 4%;
-}
-
-.campo__pais {
-    float: right;
-    width: 45%;
-}
-
-.campo__pais select {
-    width: 55%;
-    margin-left: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.checkbox {
-    float: left;
-    width: 45%;
-    margin-top: 3%;
-}
-
-.checkbox .input__check {
-    margin-left: 25%;
-    margin-top: -8%;
-}
-
-textarea {
-    width: 100%;
-    height: 100px;
-    border: solid 1px #474544;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    resize: none;
-    background-color: #EDEBD7;
-}
-
-label {
-    display: block;
-    margin: 8px;
-    padding: 2px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-input {
-    display: block;
-    margin: 5px;
-    padding: 2px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 300px;
-    background-color: #EDEBD7;
-}
-
-.campo__pais select {
-    display: block;
-    margin: 5px;
-    padding: 2px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #EDEBD7;
-}
-
-.contenedor__form h2 {
-    color: #474544;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 7px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.underline {
-    border-bottom: solid 2px #474544;
-    margin: -0.512em auto;
-    width: 80px;
-}
-
-/* Fin estilo Form */
-
-/* inicio estilo footer */
-.footer {
+/* Fin main seccion Inicio */
+/* Main seccion empresa */
+.empresa__title {
     display: flex;
-    justify-content: space-evenly;
-    background-color: #6E675F;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #E3B23C;
+    text-decoration: underline;
 }
 
-.footer div {
+.empresa__text {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #6E675F;
+    line-height: 2rem;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.subtitle h2 {
+    color: #F4442E;
+}
+
+/* Fin main seccion empresa */
+/* Main seccion servicios */
+.servicios__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    color: #E3B23C;
+    text-decoration: underline;
+}
+
+.card-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card__1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.card-body {
+    background-color: #FFEFBA;
+}
+
+.btn-card {
+    background-color: #F4442E;
+    color: #EDEBD7;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    border-top: 15px;
+    border-left: 15px;
+}
+
+.btn-card:hover {
+    background-color: #E3B23C;
+    color: #423E37;
+    border: none;
+}
+
+/* Fin main seccion servicios */
+/* Main seccion maquinas */
+.maquinas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+
+.maquinas__img img {
+    margin-left: 90px;
+    width: 10rem;
+    height: auto;
+}
+
+.maquinas__text {
     display: flex;
     align-items: center;
-    width: 300px;
-    height: 250px;
+    color: #6E675F;
 }
 
-.footer__text {
-    text-align: center;
+/* Fin main seccion máquinas */
+/* Main seccion form */
+.form__email {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+/* Fin main seccion form */
+/* Estilo Footer */
+.text__footer a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 140px;
-    color: #EDEBD7;
+    color: #423E37;
 }
 
-.footer iframe {
-    margin-top: 90px;
+.text__footer a:hover {
+    color: #F4442E;
 }
 
-.footer__text1 {
+.text__footer1 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: center;
-    color: #EDEBD7;
-    margin-top: 35px;
+    color: #E3B23C;
 }
-
-/* fin estilo footer */
-
-
-
-
-/* Medias query */
-
-/*Tablet*/
-@media screen and (max-width: 751px) {
-
-    /* Inicio estilos index*/
-
-    /* Inicio estilos header*/
-    h1 {
-        margin-left: 10px;
-    }
-
-    .encabezado {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-
-    }
-
-    .encabezado__img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .navbar-brand {
-        font-size: 40px;
-    }
-
-    .navbar-text {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    nav ul li {
-        display: inline;
-        margin: 1px;
-        font-size: 1em;
-        text-align: center;
-    }
-
-    /* Fin estilo header */
-    /* Main seccion Inicio */
-    .inicio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-    }
-
-
-
-    .inicio__text {
-        margin-top: 10px;
-        width: 500px;
-        height: auto;
-        margin-left: 10px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    /* Inicio estilo product Inicio */
-    .product {
-        margin-bottom: 35px;
-    }
-
-    .product__title {
-        text-align: center;
-        margin-top: 20px;
-
-    }
-
-    .product__items {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .product__items div a {
-        text-align: center;
-    }
-
-    .gallery {
-        margin: 0;
-        width: auto;
-    }
-
-    /* Fin estilo product */
-    .call {
-        margin-top: 50px;
-    }
-
-    .call__text {
-        text-align: center;
-        margin: auto;
-        max-width: 500px;
-    }
-
-    .footer {
-        display: flex;
-
-    }
-
-    .footer__text1 p {
-        margin: 20px;
-        font-size: 0.8em;
-        margin-top: 80px;
-    }
-
-
-    /* Fin estilos index*/
-
-
-    /* Inicio estilos Empresa*/
-
-    .empresa {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .empresa__img {
-        width: 350px;
-        height: 350px;
-        margin-top: -20px;
-        margin-left: 5px;
-    }
-
-    .empresa__text {
-        margin-top: 30px;
-
-    }
-
-    /* Fin estilos Empresa*/
-
-    /* Inicio estilos Servicios*/
-
-    .servicios__logo {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .servicios__logo img {
-        margin: 30px;
-    }
-
-    .servicios__text2 {
-        color: #6E675F;
-        line-height: 1.5rem;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    /* Fin estilos Servicios*/
-
-    /* Inicio estilos Maquinas*/
-
-    .maquinas__img img {
-
-        width: 560px;
-        height: auto;
-        margin-left: 10px;
-    }
-
-    /* Fin estilos Maquinas*/
-
-    /* Inicio estilos Contacto*/
-    /* Fin estilos Contacto*/
-
-}
-/* Movile L  */
-@media screen and (max-width: 425px) {
-    /* inicio  */
-
-    .inicio__text {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .inicio__text h2 {
-        font-size: 18px;
-        max-width: 350px;
-    }
-
-    .empresa__text p {
-        display: flex;
-        justify-content: center;
-        text-align:left;
-    }
-
-    .servicios__text2 {
-        font-size: 15px;
-    }
-
-    .maquinas__img {
-        max-width: 30px;
-    }
-
-    .maquinas__img img {
-        
-    }
-}
+/* Fin estilo Footer */
