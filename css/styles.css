@@ -44,29 +44,29 @@ body {
 /* Estilo Inicio */
 .inicio {
     margin-top: 50px;
-    /* display: flex;
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center; */
+    justify-content: center; 
+    vertical-align: middle;
 }
 
-.inicio__img img {
+.inicio__img {
+    margin-left: 220px;
     width: 350px;
     height: 400px;
-}
+} 
 
-.inicio__text {
+.inicio h2 {
     line-height: 2rem;
-    max-width: 450px;
+    max-width: 450px; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #6E675F;
-}
-
-.inicio__text h2 {
     font-size: 30px;
+    margin-right: 190px;
 }
 
-.inicio__text h2:hover {
+.inicio h2:hover {
     color: #F4442E;
     max-width: 500px;
     font-size: 32px;
