@@ -1,8 +1,9 @@
-inicio {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center; 
-    vertical-align: middle;
-}
+@import "base/reset";
+@import "layout/header";
+@import "pages/index";
+@import "pages/empresa";
+@import "pages/servicios";
+@import "pages/maquinas";
+@import "pages/contacto";
+@import "pages/index";
+@import "layout/footer";

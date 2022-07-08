@@ -1,0 +1,17 @@
+.maquinas {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 180px;
+}
+.maquinas__img {
+	img {
+		margin-left: 90px;
+		width: 10rem;
+		height: auto;
+	}
+}
+.maquinas__text {
+	display: flex;
+	align-items: center;
+	color: #6E675F;
+}

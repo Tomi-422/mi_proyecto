@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main {
+	section {
+		h1 {
+			text-align: center;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			color: #E3B23C;
+			margin-top: 40px;
+			text-decoration: underline;
+		}
+	}
+}
+body {
+	background: #FFEFBA;
+	background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);
+	background: linear-gradient(to top, #FFFFFF, #FFEFBA);
+	min-height: 120vh;
+	margin: 0;
+}
+.row {
+	justify-content: center;
+}

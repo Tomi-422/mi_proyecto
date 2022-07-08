@@ -1,0 +1,26 @@
+.empresa__title {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 90px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #E3B23C;
+	text-decoration: underline;
+}
+.empresa__text {
+	font-size: 22px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #6E675F;
+	line-height: 2rem;
+}
+.subtitle {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 100px;
+	h2 {
+		color: #F4442E;
+	}
+}
