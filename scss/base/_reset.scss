@@ -21,6 +21,12 @@ body {
 	min-height: 120vh;
 	margin: 0;
 }
-.row {
+// .row {
+// 	justify-content: center;
+// }
+@mixin cent {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }

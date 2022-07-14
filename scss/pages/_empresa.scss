@@ -1,4 +1,4 @@
-.empresa__title {
+.main__title {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -14,13 +14,8 @@
 	color: #6E675F;
 	line-height: 2rem;
 }
-.subtitle {
+.map {
 	display: flex;
-	flex-direction: column;
-	text-align: center;
 	justify-content: center;
-	margin-bottom: 100px;
-	h2 {
-		color: #F4442E;
-	}
 }
+

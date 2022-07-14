@@ -18,9 +18,11 @@
 
 <body>
   <!-- Header -->
-  <header class="container">
+  <header class="container-fluid">
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand encabezado__nav" href="./index.html">Su Vend</a>
+      <a class="navbar-brand encabezado__nav" href="./index.html">
+        <img src="./assets/img/11.png" alt="" class="logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,43 +53,40 @@
   </header>
   <!-- Main -->
   <main>
-    <section class="container">
-      <div class="row">
-        <h1 data-aos="zoom-in" class="inicio col-12">Hacemos el mejor café</h1>
-      </div>
-      <div class="container"> 
-        <div class="row">
-          <div class="Inicio col">
-            <img class="inicio__img" src="./assets/img/gallery-4.png" alt="">
-          </div>
-          <div class="inicio col">
-            <h2>Contamos con equipos de última generación, de primera marca a nivel internacional, reconocidas como
-              lideres en el Servicio del Vending!</h2>
-          </div>
+    <div>
+      <h1 data-aos="zoom-in" class="main__title">Hacemos el mejor café</h1>
+    </div>
+    <section class="container-fluid">
+      <div class=" inicio">
+        <div class="">
+          <img class="inicio__img" src="./assets/img/gallery-4.png" alt="">
         </div>
-      </div>
+        <div class="inicio__txt">
+          <h2>Contamos con equipos de última generación, de primera marca a nivel internacional, reconocidas como
+            lideres en el Servicio del Vending!</h2>
+        </div>
+      </div> 
     </section>
     <section class="container-fluid">
-      <div class="product row">
-
-        <div class="product__title col-12">
-          <h2>Nuestros productos</h2>
-        </div>
+      <div class="sub__title">
+        <h2>Nuestros productos</h2>
+      </div>
+      <div class="row product">
         <div class="product__items">
           <div class="col-4">
-            <a href="">
+            <a href="#">
               <img data-aos="flip-right" src="./assets/img/maquina-expendedora.png" alt="" class="product__img">
               <h5>Expendedoras Automáticas</h5>
             </a>
           </div>
           <div class="col-4">
-            <a href="">
+            <a href="#">
               <img data-aos="flip-left" src="./assets/img/maquina-de-cafe.png" alt="" class="product__img">
               <h5>Servícios De Cafetería</h5>
             </a>
           </div>
           <div class="col-4">
-            <a href="">
+            <a href="#">
               <img data-aos="flip-right" src="./assets/img/dos-granos-de-cafe.png" alt="" class="product__img">
               <h5>Insumos Vários</h5>
             </a>
@@ -95,10 +94,10 @@
         </div>
       </div>
     </section>
+    <div class="sub__title">
+      <h2>Galeria</h2>
+    </div>
     <section class="container gallery">
-      <div class="gallery__title row">
-        <h2>Galeria</h2>
-      </div>
       <div class="row">
         <div id="carouselExampleIndicators" class="carousel slide carrousel col-12" data-bs-ride="true">
           <div class="carousel-indicators">
@@ -132,11 +131,10 @@
           </button>
         </div>
       </div>
-
     </section>
     <section class="container">
       <div class="call row">
-        <div class="call__title col-12">
+        <div class="sub__title col-12">
           <h2>No pierdas mas tiempo!</h2>
         </div>
         <div class="call__text col-12">
@@ -170,9 +168,6 @@
     </footer>
   </div>
   <!-- Fin footer -->
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>
@@ -181,5 +176,4 @@
     AOS.init();
   </script>
 </body>
-
 </html>
