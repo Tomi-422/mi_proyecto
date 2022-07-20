@@ -1,3 +1,7 @@
+/* Colores */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+/* Border */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,7 @@
 
 main section h1 {
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #E3B23C;
   margin-top: 40px;
   text-decoration: underline;
@@ -21,7 +25,7 @@ body {
 }
 
 .encabezado__nav {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   font-size: 1.5em;
   text-decoration: none;
   color: #423E37;
@@ -39,7 +43,6 @@ body {
 .inicio {
   margin-top: 50px;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
@@ -47,7 +50,7 @@ body {
 .inicio p {
   line-height: 2rem;
   max-width: 450px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #6E675F;
   font-size: 30px;
   margin-right: 190px;
@@ -72,7 +75,7 @@ body {
 .sub__title {
   text-align: center;
   margin-bottom: 50px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #F4442E;
 }
 
@@ -86,10 +89,11 @@ body {
   background-repeat: no-repeat;
 }
 .product__items div {
-  text-align: center;
-  justify-content: center;
+  margin-top: 50px;
+  display: flex;
   align-items: center;
-  margin-top: 40px;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 40px;
 }
 .product__items div a {
@@ -100,10 +104,11 @@ body {
 }
 
 .gallery {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .carrousel {
@@ -125,7 +130,7 @@ body {
   text-align: center;
   margin: auto;
   max-width: 600px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #6E675F;
 }
 
@@ -142,7 +147,7 @@ body {
   background-color: #F4442E;
   color: #EDEBD7;
   font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   border-radius: 15px;
   border-top: 15px;
   border-left: 15px;
@@ -159,14 +164,14 @@ body {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 90px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #E3B23C;
   text-decoration: underline;
 }
 
 .empresa__text {
   font-size: 22px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #6E675F;
   line-height: 2rem;
 }
@@ -176,38 +181,53 @@ body {
   justify-content: center;
 }
 
-.card-title {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.servicios {
+  padding: 1rem;
+  max-width: 600px;
 }
 
-.card-text {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.servicio {
+  background-color: #764134;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
 }
-
-.card__1 {
+.servicio__img {
+  margin-top: 50px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  padding: 1rem;
+  height: 350px;
 }
-
-.card-body {
-  background-color: #FFEFBA;
+.servicio__img img {
+  border-radius: 0.5rem;
+  width: 65%;
 }
-
-.btn-card {
-  background-color: #F4442E;
-  color: #EDEBD7;
-  font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border-radius: 15px;
-  border-top: 15px;
-  border-left: 15px;
+.servicio__txt {
+  margin-left: 1rem;
 }
-.btn-card:hover {
-  background-color: #E3B23C;
-  color: #423E37;
+.servicio__txt h4 {
+  font-family: "Acme", sans-serif;
+  color: black;
+}
+.servicio__txt p {
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  color: black;
+}
+.servicio__button {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.servicio__button button {
   border: none;
+  background-color: #F4442E;
+  padding: 0.25rem 1rem;
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  border-radius: 0.5rem;
 }
 
 .maquinas {
@@ -237,7 +257,6 @@ body {
 .inicio {
   margin-top: 50px;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
@@ -245,7 +264,7 @@ body {
 .inicio p {
   line-height: 2rem;
   max-width: 450px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #6E675F;
   font-size: 30px;
   margin-right: 190px;
@@ -270,7 +289,7 @@ body {
 .sub__title {
   text-align: center;
   margin-bottom: 50px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #F4442E;
 }
 
@@ -284,10 +303,11 @@ body {
   background-repeat: no-repeat;
 }
 .product__items div {
-  text-align: center;
-  justify-content: center;
+  margin-top: 50px;
+  display: flex;
   align-items: center;
-  margin-top: 40px;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 40px;
 }
 .product__items div a {
@@ -298,10 +318,11 @@ body {
 }
 
 .gallery {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .carrousel {
@@ -323,7 +344,7 @@ body {
   text-align: center;
   margin: auto;
   max-width: 600px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #6E675F;
 }
 
@@ -340,7 +361,7 @@ body {
   background-color: #F4442E;
   color: #EDEBD7;
   font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   border-radius: 15px;
   border-top: 15px;
   border-left: 15px;
@@ -352,7 +373,7 @@ body {
 }
 
 .text__footer a {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #423E37;
 }
 .text__footer a:hover {
@@ -360,14 +381,14 @@ body {
 }
 
 .text__footer1 p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   color: #E3B23C;
 }
 
 @media (max-width: 1190px) {
   main div h1 {
     text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", Verdana, sans-serif;
     color: #E3B23C;
     margin-top: 40px;
     text-decoration: underline;
@@ -393,7 +414,7 @@ body {
   }
   .inicio__txt h2 {
     line-height: 2.5rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", Verdana, sans-serif;
     color: #6E675F;
     font-size: 28px;
     margin: 0px;
@@ -403,7 +424,7 @@ body {
     margin-bottom: 180px;
   }
   .sub__title {
-    margin-bottom: -90px;
+    margin-bottom: 0px;
   }
   .sub__title h2 {
     font-size: 38px;

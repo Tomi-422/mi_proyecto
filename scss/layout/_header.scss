@@ -1,12 +1,12 @@
 .encabezado__nav {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: $ff-lucida;
 	font-size: 1.5em;
 	text-decoration: none;
-	color: #423E37;
+	color: $clr-marron;
 }
 .encabezado__nav-1 {
 	&:hover {
-		color: #F4442E;
+		color: $clr-naranja;
 	}
 }
 .logo {

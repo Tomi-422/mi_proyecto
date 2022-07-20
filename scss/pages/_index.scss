@@ -4,12 +4,12 @@
 	p {
 		line-height: 2rem;
 		max-width: 450px;
-		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-		color: #6E675F;
+		font-family: $ff-lucida;
+		color: $clr-gris;
 		font-size: 30px;
 		margin-right: 190px;
 		&:hover {
-			color: #F4442E;
+			color: $clr-naranja;
 			max-width: 500px;
 			font-size: 32px;
 		}
@@ -27,8 +27,8 @@
 .sub__title {
 	text-align: center;
 	margin-bottom: 50px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	color: #F4442E;
+	font-family: $ff-lucida;
+	color: $clr-naranja;
 }
 .product__items {
 	margin-top: 20px;
@@ -45,7 +45,7 @@
 		a {
 			text-align: center;
 			justify-content: center;
-			color: black;
+			color: $clr-negro;
 			text-decoration: none;
 		}
 	}
@@ -73,8 +73,8 @@
 	text-align: center;
 	margin: auto;
 	max-width: 600px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	color: #6E675F;
+	font-family: $ff-lucida;
+	color: $clr-gris;
 }
 .call__button {
 	display: flex;
@@ -85,16 +85,16 @@
 .button__main {
 	width: 300px;
 	height: 60px;
-	background-color: #F4442E;
-	color: #EDEBD7;
+	background-color: $clr-naranja;
+	color: $clr-claro;
 	font-size: 20px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: $ff-lucida;
 	border-radius: 15px;
 	border-top: 15px;
 	border-left: 15px;
 	&:hover {
-		background-color: #E3B23C;
-		color: #423E37;
+		background-color: $clr-amarillo;
+		color: $clr-marron;
 		border: none;
 	}
 }

@@ -7,8 +7,8 @@ main {
 	section {
 		h1 {
 			text-align: center;
-			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-			color: #E3B23C;
+			font-family: $ff-lucida;
+			color: $clr-amarillo;
 			margin-top: 40px;
 			text-decoration: underline;
 		}
@@ -24,9 +24,3 @@ body {
 // .row {
 // 	justify-content: center;
 // }
-@mixin cent {
-	margin-top: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}

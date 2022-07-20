@@ -4,14 +4,14 @@
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 90px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	color: #E3B23C;
+	font-family: $ff-lucida;
+	color: $clr-amarillo;
 	text-decoration: underline;
 }
 .empresa__text {
 	font-size: 22px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	color: #6E675F;
+	font-family: $ff-lucida;
+	color: $clr-gris;
 	line-height: 2rem;
 }
 .map {

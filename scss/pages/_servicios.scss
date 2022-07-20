@@ -1,25 +1,93 @@
-.card-title {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.servicios {
+	padding: 1rem;
+	max-width: 600px;
 }
-.card-text {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.card__1 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-bottom: 100px;
-}
-.card-body {
-	background-color: #FFEFBA;
-}
-.btn-card {
-	@extend .button__main;
-	width: auto;
-	height: auto;
-	&:hover {
-		background-color: #E3B23C;
-		color: #423E37;
-		border: none;
+
+.servicio {
+	background-color: $clr-card;
+	padding: 1rem;
+	margin: 1rem auto;
+	border-radius: $borderRadius;
+	&__img {
+		@include cent; 
+		padding: 1rem;
+		height: 350px;
+		& img{
+			border-radius: $borderRadius;
+			width: 65%;
+		}
+	}
+	&__txt {
+		margin-left: 1rem;
+		& h4 {
+			font-family: $ff-acme;
+			color: $clr-negro;
+		}
+		& p {
+			font-family: $ff-lucida;
+			color: $clr-negro;
+		}
+	}
+	&__button {
+		@include cent;
+		margin-top: 1rem;
+		& button {
+			border: none;
+			background-color: $clr-naranja;
+			padding: 00.25rem 1rem; 
+			font-family: $ff-lucida;
+			border-radius: $borderRadius;
+		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .card-title {
+// 	font-family: $ff-lucida;
+// }
+// .card-text {
+// 	font-family: $ff-lucida;
+// }
+// .card__1 {
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: center;
+// 	margin-bottom: 100px;
+// }
+// .card-body {
+// 	background-color: #FFEFBA;
+// }
+// .btn-card {
+// 	@extend .button__main;
+// 	width: auto;
+// 	height: auto;
+// 	&:hover {
+// 		background-color: $clr-amarillo;
+// 		color: $clr-marron;
+// 		border: none;
+// 	}
+// }
