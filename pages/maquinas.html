@@ -5,10 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="expendedoras maquinas-de-cafe industria reuniones">
   <title>Maquinas</title>
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--  AOS trancisiones-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- css -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -16,7 +22,8 @@
   <!-- Header -->
   <header class="container-fluid">
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand encabezado__nav" href="../index.html"><img src="../assets/img/11.png" alt="" class="logo"></a>
+      <a class="navbar-brand encabezado__nav" href="../index.html"><img src="../assets/img/logo-suvend.png"
+          alt="logo-suvend" class="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,19 +53,18 @@
     </nav>
   </header>
   <!-- Main -->
-  <main class="container">
-    <div class="main__title row">
-      <h1 data-aos="zoom-in" class="col">Nuestras Máquinas</h1>
-    </div>
-    <section class="container maquinas">
+  <main>
+    <h1 data-aos="zoom-in" class="main__title display-4 fw-bold">Nuestras Máquinas</h1>
+
+    <section class="maquinas container-fluid">
       <div class="row">
-        <div class="sub__title col-12">
+        <div class="maquinas__sub sub__title col-12">
           <h2>Concerto</h2>
         </div>
-        <div class="col maquinas__img">
-          <img src="../assets/img/maquina-concerto-removebg-preview.png" alt="">
+        <div class="maquinas__img col-12  d-flex justify-content-center">
+          <img src="../assets/img/maquina-concerto.png" alt="maquina de cafe grande">
         </div>
-        <div class="col maquinas__text">
+        <div class="maquinas__text col-12 d-flex justify-content-center">
           <ul>
             <li>
               <p><b>N° de selecciones:</b> 15</p>
@@ -67,7 +73,7 @@
               <p><b>Capacidad (vasos):</b> 490</p>
             </li>
             <li>
-              <p><b>Alto:</b> 1.7m</p>
+              <p><b>Alto:</b> 1.70m</p>
             </li>
             <li>
               <p><b>Ancho:</b> 0.54m</p>
@@ -82,21 +88,22 @@
               <p><b>Potencia instalada:</b> 1,8kw</p>
             </li>
             <li>
-              <p><b>Peso: 114kg</b></p>
+              <p><b>Peso:</b> 114kg</p>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="container maquinas">
+
+    <section class="maquinas container-fluid">
       <div class="row">
-        <div class="sub__title col-12">
+        <div class="maquinas__sub sub__title col-12">
           <h2>Solista</h2>
         </div>
-        <div class="col maquinas__img">
-          <img src="../assets/img/maquina-solista-removebg-preview.png" alt="">
+        <div class="maquinas__img col-12  d-flex justify-content-center">
+          <img src="../assets/img/maquina-solista.png" alt="maquina de cafe mediana">
         </div>
-        <div class="col maquinas__text">
+        <div class="maquinas__text col-12 d-flex justify-content-center">
           <ul>
             <li>
               <p><b>N° de selecciones:</b> 9</p>
@@ -126,15 +133,16 @@
         </div>
       </div>
     </section>
-    <section class="container maquinas">
+
+    <section class="maquinas container-fluid">
       <div class="row">
-        <div class="sub__title col-12">
+        <div class="maquinas__sub sub__title col-12">
           <h2>Koro exprésso</h2>
         </div>
-        <div class="col maquinas__img">
-          <img src="../assets/img/maquina-koro-espresso-removebg-preview.png" alt="">
+        <div class="maquinas__img col-12  d-flex justify-content-center">
+          <img src="../assets/img/maquina-koro.png" alt="maquina de cafe chica">
         </div>
-        <div class="col">
+        <div class="maquinas__text col-12 d-flex justify-content-center">
           <ul>
             <li>
               <p><b>N° de selecciones:</b> 6</p>
@@ -166,26 +174,10 @@
     </section>
   </main>
   <!-- Footer -->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text__footer1">
-      <p class="col-md-4 mb-0">© 2022 Su Vend Todos los derechos reservados</p>
-
-      <a href="/"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-
-      <ul class="nav col-md-4 justify-content-end text__footer">
-        <li class="nav-item"><a href="../index.html" class="nav-link px-2">Inicio</a></li>
-        <li class="nav-item"><a href="./empresa.html" class="nav-link px-2">Empresa</a></li>
-        <li class="nav-item"><a href="./servicios.html" class="nav-link px-2">Servicios</a></li>
-        <li class="nav-item"><a href="./maquinas.html" class="nav-link px-2">Maquinas</a></li>
-        <li class="nav-item"><a href="./contacto.html" class="nav-link px-2">Contacto</a></li>
-      </ul>
-    </footer>
-  </div>
+  <footer
+    class="container-fluid d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top text__footer1">
+    <p class="col-md-12 text-center mb-0">© 2022 Su Vend Todos los derechos reservados</p>
+  </footer>
   <!-- Fin footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

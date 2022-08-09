@@ -1,17 +1,41 @@
 .maquinas {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 180px;
-}
-.maquinas__img {
-	img {
-		margin-left: 90px;
-		width: 10rem;
-		height: auto;
+	&__sub {
+		@include md {
+			margin: 30px 0;
+		}
+		@include sm {
+			margin: 0;
+		}
 	}
-}
-.maquinas__text {
-	display: flex;
-	align-items: center;
-	color: $clr-gris;
+	&__img {
+		& img {
+			width: 10%;
+			height: auto;
+			margin: 30px 0 30px 0;
+
+			@include md {
+				width: 20%;
+				height: auto;
+				margin: 0 0 25px 0	;
+			}
+			@include sm {
+				width: 30%;
+			}
+		}
+	}	
+	&__text {
+		align-items: center;
+		color: $clr-gris;
+		margin: 0;
+
+		@include md {
+			//margin: 0 0 0 35%;
+		}
+
+		@include sm {
+			font-size: 14px;
+			//margin: 5 1
+		}
+
+	}
 }
